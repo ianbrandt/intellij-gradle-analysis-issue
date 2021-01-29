@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest
 @SpringBootTest
 class IntellijGradleAnalysisIssueApplicationTests {
 
-    @Test
-    fun contextLoads() {
-    }
+	@Test
+	fun contextLoads() {
+	}
 }

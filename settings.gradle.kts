@@ -1,15 +1,15 @@
 pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        jcenter()
-    }
+	repositories {
+		gradlePluginPortal()
+		jcenter()
+	}
 }
 
 dependencyResolutionManagement {
-    @Suppress("UnstableApiUsage")
-    repositories {
-        jcenter()
-    }
+	@Suppress("UnstableApiUsage")
+	repositories {
+		jcenter()
+	}
 }
 
 rootProject.name = "intellij-gradle-analysis-issue"

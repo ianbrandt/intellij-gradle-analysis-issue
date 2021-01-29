@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class IntellijGradleAnalysisIssueApplication
 
 fun main(args: Array<String>) {
-    runApplication<IntellijGradleAnalysisIssueApplication>(*args)
+	runApplication<IntellijGradleAnalysisIssueApplication>(*args)
 }

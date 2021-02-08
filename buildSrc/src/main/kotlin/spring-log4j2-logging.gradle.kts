@@ -24,7 +24,8 @@ class SpringLoggingCapability : ComponentMetadataRule {
 		if (id.group == "org.springframework.boot" && id.name == "spring-boot-starter-log4j2") {
 			allVariants {
 				withCapabilities {
-					// Declare that spring-boot-starter-log4j2 provides the spring-boot-starter-logging capability
+					// Declare that spring-boot-starter-log4j2 provides
+					// spring-boot-starter-logging capability
 					addCapability("org.springframework.boot", "spring-boot-starter-logging", id.version)
 				}
 			}

@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 configurations.all {
 	resolutionStrategy.capabilitiesResolution.withCapability("org.springframework.boot:spring-boot-starter-logging") {
 		val toBeSelected = candidates.firstOrNull {

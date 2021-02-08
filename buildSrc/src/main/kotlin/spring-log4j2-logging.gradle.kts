@@ -1,17 +1,17 @@
-@file:Suppress("UnstableApiUsage")
-
 configurations.all {
-	resolutionStrategy.capabilitiesResolution.withCapability("org.springframework.boot:spring-boot-starter-logging") {
-		val toBeSelected = candidates.firstOrNull {
-			it.id.let { id ->
-				id is ModuleComponentIdentifier && id.module == "spring-boot-starter-log4j2"
+	@Suppress("UnstableApiUsage")
+	resolutionStrategy.capabilitiesResolution
+			.withCapability("org.springframework.boot:spring-boot-starter-logging") {
+				val toBeSelected = candidates.firstOrNull {
+					it.id.let { id ->
+						id is ModuleComponentIdentifier && id.module == "spring-boot-starter-log4j2"
+					}
+				}
+				if (toBeSelected != null) {
+					select(toBeSelected)
+				}
+				because("use spring-boot-starter-log4j2 in place of spring-boot-starter-logging")
 			}
-		}
-		if (toBeSelected != null) {
-			select(toBeSelected)
-		}
-		because("use spring-boot-starter-log4j2 in place of spring-boot-starter-logging")
-	}
 }
 
 dependencies {
